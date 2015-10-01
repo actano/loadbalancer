@@ -20,5 +20,5 @@ and send the `SIGHUP` signal to the running container:
 
     docker kill -s SIGHUP loadbalancer
 
-To be more resilient the config files is checked for validity before doing the switch. If the updated config
+To be more resilient the config file is checked for validity before doing the switch. If the updated config
 is invalid the proxy keeps running with the old settings.
