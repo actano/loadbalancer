@@ -19,3 +19,6 @@ To reconfigure haproxy without packet loss, change the config file which is moun
 and send the `SIGHUP` signal to the running container:
 
     docker kill -s SIGHUP loadbalancer
+
+To be more resilient the config files is checked for validity before doing the switch. If the updated config
+is invalid the proxy keeps running with the old settings.
