@@ -12,7 +12,7 @@ without packet loss.
 ### Starting container
 To start a haproxy listening on port 80 using the config file `./haproxy.cfg`
 
-    docker run -d --name loadbalancer -p 80:80 -v `PWD`/haproxy.cfg:/etc/haproxy/haproxy.cfg:ro actano/loadbalancer
+    docker run -d --name loadbalancer -p 80:80 -v `pwd`/haproxy.cfg:/etc/haproxy/haproxy.cfg:ro actano/loadbalancer
 
 ### Graceful reconfiguration
 To reconfigure haproxy without packet loss, change the config file which is mounted into the container
